@@ -3,7 +3,6 @@ import { Chart, registerables } from 'chart.js'
 
 Chart.register(...registerables)
 
-/** Membuat Chart.js pada canvas ref, dan membangun ulang saat data berubah. */
 export function useChart(canvasRef, buildConfig, source) {
   let chart = null
 
